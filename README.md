@@ -8,11 +8,10 @@ And you can edit parent-child relationship of wiki pages by drag & drop.
 ![スクリーンショット](image/screenshot.gif)
 
 ## Installation
-1. Clone or copy files into the Redmine plugins directory
-  ```
-  git clone https://github.com/ledsun/redmine_wiki_page_tree.git plugins/redmine_wiki_page_tree
-  ```
-2. Restart Redmine
+
+1. Download this repository
+2. Move the `redmine_wiki_page_tree` directory into your plugins directory
+3. Restart the Redmine
 
 ## License
 This plugin is released under the MIT License.
@@ -30,4 +29,4 @@ Use the [Docker](https://www.docker.com/) and [Docker Compose](https://docs.dock
 3. Login the redmine as `admin` with password `admin`
 4. Create a project
 5. Open wiki of that project
-6. Create some wiki pages and edit their parent-child relationship 
+6. Create some wiki pages and edit their parent-child relationship
