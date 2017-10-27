@@ -16,3 +16,18 @@ And you can edit parent-child relationship of wiki pages by drag & drop.
 
 ## License
 This plugin is released under the MIT License.
+
+## To Develop or to try to Use a sample
+
+Use the [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) to create a development environment.
+
+1. Start server
+  ```
+  docker-compose up redmine
+  ```
+
+2. Open http://localhost in your browser
+3. Login the redmine as `admin` with password `admin`
+4. Create a project
+5. Open wiki of that project
+6. Create some wiki pages and edit their parent-child relationship 
