@@ -12,7 +12,7 @@ class RedmineWikiPageTreesHookListener < Redmine::Hook::ViewListener
     pages_by_parent_id = pages.group_by(&:parent_id)
 
     content_tag(:div, class: 'page-tree') do
-      concat content_tag(:h2, 'ページツリービュー', class: 'page-tree__title')
+      concat content_tag(:h3, l(:page_tree), class: 'page-tree__title')
       concat render_page_hierarchy(pages_by_parent_id, nil, :timestamp => true)
     end
   end
