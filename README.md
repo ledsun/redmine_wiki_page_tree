@@ -13,6 +13,9 @@ And you can edit parent-child relationship of wiki pages by drag & drop.
 2. Move the `redmine_wiki_page_tree` directory into your plugins directory
 3. Restart the Redmine
 
+## See also
+[Redmine Wikiのページツリー構造をドラッグ&ドロップで編集できるプラグインを作りました // Speaker Deck](https://speakerdeck.com/ledsun/redmine-wikifalsepeziturigou-zao-wodoratugu-and-dorotupudebian-ji-dekirupuraguinwozuo-rimasita) (Japanese)
+
 ## License
 This plugin is released under the MIT License.
 

@@ -1,0 +1,17 @@
+#sidebar .page-tree {
+    margin-left: -12px;
+    padding-top: 10px;
+}
+
+#sidebar .page-tree__title {
+    margin-left: 12px;
+}
+
+#sidebar .page-tree__list {
+    margin: 0 12px;
+}
+
+#sidebar .page-tree__list__node--leaf {
+    list-style-type: disc;
+    margin-left: 13px;
+}
