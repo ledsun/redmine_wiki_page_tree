@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       // ドラッグ時の処理
       a.addEventListener('drop', (e) => {
+        // Prevent redirection to the URL like `file://` on the Firefox.
+        e.preventDefault()
+
         const url = e.dataTransfer.getData('url') // 移動するwikiページのURL
         const parentId = e.target.getAttribute('data-wiki-page-id') // 親ページのID
 
