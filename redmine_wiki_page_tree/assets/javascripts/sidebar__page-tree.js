@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .forEach(a => {
       // ドッラグ開始時にドラッグ中要素の情報を記録
       a.addEventListener('dragstart', (e) => {
-        e.dataTransfer.setData('url', e.target.getAttribute('href'))
+        e.dataTransfer.setData('text/plain', e.target.getAttribute('href'))
       })
       // ドラッグオーバー時にドロップ可能表示
       a.addEventListener('dragover', (e) => {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Prevent redirection to the URL like `file://` on the Firefox.
         e.preventDefault()
 
-        const url = e.dataTransfer.getData('url') // 移動するwikiページのURL
+        const url = e.dataTransfer.getData('text/plain') // 移動するwikiページのURL
         const parentId = e.target.getAttribute('data-wiki-page-id') // 親ページのID
 
         // CSRF対策用トークン

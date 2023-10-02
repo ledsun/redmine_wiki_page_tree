@@ -1,4 +1,4 @@
-class RedmineWikiPageTreesHookListener < Redmine::Hook::ViewListener
+class RedmineWikiPageTreeHookListener < Redmine::Hook::ViewListener
   include ActionView::Helpers::DateHelper
   include ActionView::Context
 
